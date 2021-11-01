@@ -98,8 +98,15 @@ body main p {
   line-height: 1.5625rem;
 }
 
+body main .container .introduction img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
 body main .container .introduction .text-wrapper {
-  margin: 3rem 1rem;
+  margin: 3rem 1rem 2rem;
 }
 
 body main .container .introduction .text-wrapper p {
@@ -115,5 +122,6 @@ body main .container .introduction button {
   background-color: #f94f4f;
   color: white;
   font-weight: 800;
+  font-size: 1.125rem;
 }
 /*# sourceMappingURL=styles.css.map */
