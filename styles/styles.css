@@ -106,7 +106,7 @@ body main .container .introduction img {
 }
 
 body main .container .introduction .text-wrapper {
-  margin: 3rem 1rem 2rem;
+  margin: 3rem 1.5rem 2rem;
 }
 
 body main .container .introduction .text-wrapper p {
@@ -115,7 +115,7 @@ body main .container .introduction .text-wrapper p {
 }
 
 body main .container .introduction button {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   height: 3rem;
   width: 11rem;
   border: none;
@@ -172,7 +172,7 @@ body main .strategy img {
 }
 
 body main .strategy .text-wrapper {
-  padding: 4rem 1rem;
+  padding: 4rem 1.5rem;
   position: relative;
 }
 
@@ -180,5 +180,44 @@ body main .strategy .text-wrapper .wave-img {
   position: absolute;
   width: 60px;
   top: -5%;
+}
+
+body main .approach {
+  background-color: #f94f4f;
+  padding: 5rem 1.5rem;
+}
+
+body main .approach h2 {
+  font-size: 2rem;
+  color: white;
+  line-height: 2.5rem;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+body main .approach h3 {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: white;
+}
+
+body main .approach p {
+  color: white;
+}
+
+body main .approach .sub-title {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 3rem 1rem 0rem;
+}
+
+body main .approach .sub-title .number {
+  font-weight: 800;
+  font-size: 5rem;
+  opacity: 20%;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=styles.css.map */
