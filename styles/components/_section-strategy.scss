@@ -1,0 +1,53 @@
+body {
+  main {
+    .strategy {
+      margin-top: 5rem;
+      background-color: $bg-black;
+      h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: white;
+
+        span {
+          color: $red;
+        }
+      }
+
+      p {
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+        color: white;
+        margin: 2rem 0rem;
+      }
+
+      a {
+        font-size: 0.9375rem;
+        color: $red;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      a::after {
+        content: "";
+        border: 1px solid $red;
+        display: flex;
+        margin-top: 0.5rem;
+        width: 100px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .text-wrapper {
+        padding: 4rem 1rem;
+        position: relative;
+        .wave-img {
+          position: absolute;
+          width: 60px;
+          top: -5%;
+        }
+      }
+    }
+  }
+}

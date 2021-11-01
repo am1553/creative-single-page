@@ -124,4 +124,61 @@ body main .container .introduction button {
   font-weight: 800;
   font-size: 1.125rem;
 }
+
+body main .strategy {
+  margin-top: 5rem;
+  background-color: #191921;
+}
+
+body main .strategy h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+}
+
+body main .strategy h2 span {
+  color: #f94f4f;
+}
+
+body main .strategy p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+
+body main .strategy a {
+  font-size: 0.9375rem;
+  color: #f94f4f;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+body main .strategy a::after {
+  content: "";
+  border: 1px solid #f94f4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+  width: 100px;
+}
+
+body main .strategy img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .strategy .text-wrapper {
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+body main .strategy .text-wrapper .wave-img {
+  position: absolute;
+  width: 60px;
+  top: -5%;
+}
 /*# sourceMappingURL=styles.css.map */
