@@ -3,17 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Frontend Mentor | Creative single page site</title>
 </head>
 <body>
-  About
-  Service
-  Projects
 
-  Schedule a call
+  <header>
+    <div class="logo">
+      <img src="assets/desktop/logo.svg" alt="">
+    </div>
+    <div class="menu">
+      <button id="menu-btn">
+        <img src="assets/mobile/icon-hamburger.svg" alt="" id="menubtn-img">
+      </button>
+    </div>
+    <div class="navigation nav-toggle" id="nav-panel">
+      <nav>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Projects</a>
+        <button class="schedule-call">Schedule a call</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 
 
   Branding & website design agency
 
@@ -57,6 +75,8 @@
 
   Let's build something great together.
 
-  Schedule a Call
+  Schedule a Call -->
+
+  <script src="script.js"></script>
 </body>
 </html>
