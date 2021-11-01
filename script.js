@@ -3,7 +3,6 @@ const menuBtn = document.getElementById("menu-btn");
 const menuBtnImg = document.getElementById("menubtn-img");
 const navPanel = document.getElementById("nav-panel");
 
-console.log(menuBtnImg.getAttribute('src'));
 
 // EVENTLISTENER
 menuBtn.addEventListener("click", ()=> {
