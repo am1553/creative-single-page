@@ -1,3 +1,129 @@
+@media screen and (max-width: 720px) {
+  body header .desktop-nav {
+    display: none;
+  }
+  body main .container .introduction .desktop-image {
+    display: none;
+  }
+  body main .container .strategy .desktop-image {
+    display: none;
+  }
+  body main .strategy .desktop-red-wave {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body header {
+    position: relative;
+    height: 150px !important;
+    padding: 0px 0px 0px 0px !important;
+  }
+  body header .menu,
+  body header .navigation {
+    display: none;
+  }
+  body header .logo {
+    padding: 2.5rem;
+  }
+  body header .desktop-nav {
+    width: 60%;
+    height: 100%;
+    background-color: #f94f4f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+  }
+  body header .desktop-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    line-height: 2rem;
+  }
+  body header .desktop-nav button {
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #191921;
+    color: white;
+    font-weight: 800;
+    border: none;
+  }
+  body main .container {
+    position: relative;
+  }
+  body main .container .introduction {
+    position: relative;
+    height: 100vh;
+  }
+  body main .container .introduction .mobile-image {
+    display: none;
+  }
+  body main .container .introduction .desktop-image {
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+  }
+  body main .container .introduction .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+  }
+  body main .container .introduction .text-wrapper h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  body main .container .introduction button {
+    position: absolute;
+    top: 350px;
+    left: 0;
+  }
+  body main .container .strategy {
+    position: relative;
+    margin-top: 0;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  body main .container .strategy .mobile-image {
+    display: none;
+  }
+  body main .container .strategy .desktop-image {
+    height: 100%;
+  }
+  body main .container .strategy .text-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 25%;
+    padding-left: 5rem;
+  }
+  body main .container .strategy .text-wrapper h2,
+  body main .container .strategy .text-wrapper p {
+    text-align: left;
+  }
+  body main .container .strategy .desktop-red-wave {
+    position: absolute;
+    width: 63px;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +136,11 @@ body {
   width: 100%;
   font-family: "Commissioner", sans-serif;
   font-size: 1.125rem;
+  scroll-behavior: smooth;
+}
+
+body button {
+  cursor: pointer;
 }
 
 body header {
@@ -102,7 +233,6 @@ body main .container .introduction img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  display: block;
 }
 
 body main .container .introduction .text-wrapper {
@@ -219,5 +349,109 @@ body main .approach .sub-title .number {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+body main .projects {
+  width: 100%;
+  background-color: #191921;
+  padding-bottom: 5rem;
+}
+
+body main .projects .project .img-caption {
+  position: relative;
+}
+
+body main .projects .project .img-caption img {
+  width: 100%;
+  display: block;
+}
+
+body main .projects .project .img-caption .caption {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+  z-index: 5;
+}
+
+body main .projects .project .img-caption .caption h3 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+body main .projects .project .img-caption .caption .year {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+body main .projects .project .img-caption .shadow {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#191921));
+  background: linear-gradient(rgba(255, 255, 255, 0), #191921);
+}
+
+body main .projects .project .project-title {
+  margin: 3rem 1.5rem 3rem;
+}
+
+body main .projects .project .project-title h2 {
+  color: white;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+body main .projects button {
+  background: transparent;
+  border: none;
+  margin-left: 1.5rem;
+}
+
+body main .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body main .footer {
+  margin: 5rem 1.5rem;
+}
+
+body main .footer h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #191921;
+  margin-bottom: 3rem;
+}
+
+body main .footer button {
+  color: white;
+  font-weight: 800;
+  background-color: #f94f4f;
+  border: none;
+  height: 3rem;
+  width: 10rem;
 }
 /*# sourceMappingURL=styles.css.map */

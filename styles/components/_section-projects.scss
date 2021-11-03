@@ -1,0 +1,67 @@
+body {
+  main {
+    .projects {
+      width: 100%;
+      background-color: $bg-black;
+      padding-bottom: 5rem;
+      .project {
+        .img-caption {
+          position: relative;
+          img {
+            width: 100%;
+            display: block;
+          }
+          .caption {
+            color: white;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            text-align: right;
+            z-index: 5;
+            h3 {
+              font-size: 0.9375rem;
+              line-height: 1.25rem;
+            }
+            .year {
+              font-size: 0.9375rem;
+              line-height: 1.25rem;
+            }
+          }
+          .shadow {
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(rgba(255, 255, 255, 0), #191921);
+          }
+        }
+        .project-title {
+          margin: 3rem 1.5rem 3rem;
+          h2 {
+            color: white;
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+        }
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        margin-left: 1.5rem;
+      }
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}

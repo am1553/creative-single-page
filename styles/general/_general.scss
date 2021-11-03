@@ -9,4 +9,9 @@ body {
   width: 100%;
   font-family: "Commissioner", sans-serif;
   font-size: 1.125rem;
+  scroll-behavior: smooth;
+
+  button {
+    cursor: pointer;
+  }
 }
