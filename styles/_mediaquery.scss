@@ -23,6 +23,11 @@
           display: none;
         }
       }
+      .projects {
+        .desktop-white-wave {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -132,6 +137,226 @@
             left: 50%;
             top: 20%;
             transform: translateX(-50%);
+          }
+        }
+        //APPROACH
+        .approach {
+          padding: 0 !important;
+          display: grid;
+          grid-template-columns: 40% 60%;
+          height: 100%;
+          position: relative;
+          background-color: white;
+          .title {
+            // height: 100%;
+            margin: 7rem 1.5rem 0rem;
+            h2 {
+              color: black;
+            }
+          }
+          .sub {
+            background-color: #f94f4f;
+            grid-column: 2/2;
+            top: 0;
+            z-index: 10;
+            height: 100%;
+            right: 0;
+            padding-top: 4rem;
+            .sub-title {
+              margin: 2rem 1rem;
+              p {
+                margin: 1rem 0rem;
+              }
+              h3,
+              p {
+                padding-left: 50px;
+                padding-top: 5px;
+              }
+            }
+          }
+
+          .sub::before {
+            content: "";
+            background-color: #f94f4f;
+            width: 60%;
+            height: 100%;
+            position: absolute;
+            top: -70px;
+          }
+        }
+
+        // PROJECTS-----------
+
+        .projects {
+          width: 100%;
+          min-height: 550px;
+          position: relative;
+          background-color: white;
+          .project-carousel {
+            .project {
+              .img-caption {
+                position: absolute;
+                right: 0;
+                top: 0;
+                img {
+                  width: 60vw;
+                  max-height: 550px;
+                  object-fit: cover;
+                }
+                .caption {
+                  padding: 2rem;
+                }
+              }
+              .project-title {
+                background-color: #191921;
+                height: 60vh;
+                width: 50%;
+                position: absolute;
+                margin: 0px;
+
+                h2 {
+                  width: 70%;
+                  padding: 5rem 0 0 3rem;
+                }
+              }
+            }
+          }
+          .button-wrapper {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            padding-left: 1.5rem;
+          }
+          .desktop-white-wave {
+            display: block;
+            position: absolute;
+            width: 63px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            z-index: 10;
+          }
+        }
+
+        // FOOTER
+
+        .footer {
+          width: 90%;
+          height: 30vh;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    header {
+      button:hover {
+        background-color: #434356;
+        transition: all 350ms ease-in-out;
+      }
+    }
+    main {
+      .container {
+        .introduction {
+          .text-wrapper {
+            padding: 5rem 0rem 0rem 5rem;
+            h1 {
+              font-size: 5rem;
+              line-height: 5.5rem;
+            }
+            p {
+              font-size: 1.125rem;
+              line-height: 2rem;
+            }
+          }
+          button {
+            top: 500px;
+            left: 5rem;
+          }
+          button:hover {
+            background-color: #ff9393;
+            transition: all 350ms ease-in-out;
+          }
+        }
+        .strategy {
+          .text-wrapper {
+            width: 70%;
+            h2 {
+              font-size: 3.5rem;
+              line-height: 4rem;
+            }
+            p,
+            a {
+              font-size: 1.125rem;
+            }
+            a:hover {
+              color: #ff9393;
+              transition: all 250ms ease;
+            }
+            a:hover::after {
+              border-color: #ff9393;
+              transition: all 250ms ease;
+            }
+          }
+        }
+        .approach {
+          position: relative;
+          h2 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            position: absolute;
+            width: 600px;
+            left: 200px;
+            z-index: 20;
+          }
+          .sub {
+            grid-column: 2/2;
+            top: 0;
+
+            height: 100%;
+            right: 0;
+            padding-top: 4rem;
+            .sub-title {
+              margin: 2rem 1rem;
+              p {
+                margin: 1rem 0rem;
+              }
+              span {
+                padding-left: 200px;
+              }
+              h3,
+              p {
+                padding-left: 250px;
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+        .projects {
+          .project-carousel {
+            .project {
+              .img-caption {
+              }
+              .project-title {
+                h2 {
+                  font-size: 3.5rem;
+                  line-height: 4rem;
+                }
+              }
+            }
+          }
+          .button-wrapper {
+            margin-top: 5rem;
           }
         }
       }

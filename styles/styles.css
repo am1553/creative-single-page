@@ -11,6 +11,9 @@
   body main .strategy .desktop-red-wave {
     display: none;
   }
+  body main .projects .desktop-white-wave {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -121,6 +124,205 @@
     top: 20%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  body main .container .approach {
+    padding: 0 !important;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+  }
+  body main .container .approach .title {
+    margin: 7rem 1.5rem 0rem;
+  }
+  body main .container .approach .title h2 {
+    color: black;
+  }
+  body main .container .approach .sub {
+    background-color: #f94f4f;
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    right: 0;
+    padding-top: 4rem;
+  }
+  body main .container .approach .sub .sub-title {
+    margin: 2rem 1rem;
+  }
+  body main .container .approach .sub .sub-title p {
+    margin: 1rem 0rem;
+  }
+  body main .container .approach .sub .sub-title h3,
+  body main .container .approach .sub .sub-title p {
+    padding-left: 50px;
+    padding-top: 5px;
+  }
+  body main .container .approach .sub::before {
+    content: "";
+    background-color: #f94f4f;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: -70px;
+  }
+  body main .container .projects {
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+    background-color: white;
+  }
+  body main .container .projects .project-carousel .project .img-caption {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  body main .container .projects .project-carousel .project .img-caption img {
+    width: 60vw;
+    max-height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .container .projects .project-carousel .project .img-caption .caption {
+    padding: 2rem;
+  }
+  body main .container .projects .project-carousel .project .project-title {
+    background-color: #191921;
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    margin: 0px;
+  }
+  body main .container .projects .project-carousel .project .project-title h2 {
+    width: 70%;
+    padding: 5rem 0 0 3rem;
+  }
+  body main .container .projects .button-wrapper {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+    padding-left: 1.5rem;
+  }
+  body main .container .projects .desktop-white-wave {
+    display: block;
+    position: absolute;
+    width: 63px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 100px;
+    z-index: 10;
+  }
+  body main .container .footer {
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .container .footer h2 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body header button:hover {
+    background-color: #434356;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+  }
+  body main .container .introduction .text-wrapper {
+    padding: 5rem 0rem 0rem 5rem;
+  }
+  body main .container .introduction .text-wrapper h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  body main .container .introduction .text-wrapper p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  body main .container .introduction button {
+    top: 500px;
+    left: 5rem;
+  }
+  body main .container .introduction button:hover {
+    background-color: #ff9393;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+  }
+  body main .container .strategy .text-wrapper {
+    width: 70%;
+  }
+  body main .container .strategy .text-wrapper h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  body main .container .strategy .text-wrapper p,
+  body main .container .strategy .text-wrapper a {
+    font-size: 1.125rem;
+  }
+  body main .container .strategy .text-wrapper a:hover {
+    color: #ff9393;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+  }
+  body main .container .strategy .text-wrapper a:hover::after {
+    border-color: #ff9393;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+  }
+  body main .container .approach {
+    position: relative;
+  }
+  body main .container .approach h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    position: absolute;
+    width: 600px;
+    left: 200px;
+    z-index: 20;
+  }
+  body main .container .approach .sub {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    top: 0;
+    height: 100%;
+    right: 0;
+    padding-top: 4rem;
+  }
+  body main .container .approach .sub .sub-title {
+    margin: 2rem 1rem;
+  }
+  body main .container .approach .sub .sub-title p {
+    margin: 1rem 0rem;
+  }
+  body main .container .approach .sub .sub-title span {
+    padding-left: 200px;
+  }
+  body main .container .approach .sub .sub-title h3,
+  body main .container .approach .sub .sub-title p {
+    padding-left: 250px;
+    padding-top: 5px;
+  }
+  body main .container .projects .project-carousel .project .project-title h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  body main .container .projects .button-wrapper {
+    margin-top: 5rem;
   }
 }
 
@@ -386,7 +588,7 @@ body main .projects .project .img-caption .caption .year {
 }
 
 body main .projects .project .img-caption .shadow {
-  height: 100px;
+  height: 120px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -419,7 +621,7 @@ body main .fade {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.8;
   }
   to {
     opacity: 1;
@@ -428,7 +630,7 @@ body main .fade {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.8;
   }
   to {
     opacity: 1;

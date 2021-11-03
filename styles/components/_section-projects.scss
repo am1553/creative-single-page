@@ -28,7 +28,7 @@ body {
             }
           }
           .shadow {
-            height: 100px;
+            height: 120px;
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -57,7 +57,7 @@ body {
     }
     @keyframes fade {
       from {
-        opacity: 0.4;
+        opacity: 0.8;
       }
       to {
         opacity: 1;
